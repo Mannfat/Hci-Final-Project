@@ -2,36 +2,36 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Login - DNR MUSIC</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | GuitarZone</title>
+  <link rel="stylesheet" href="login.css" />
 </head>
 <body>
+
   <header>
-    <!-- ... nav ... -->
-    <header>
-      <h1><a href="Home.html" class="no-style">GuitarZone</a></h1>
-      <nav>
-        <ul>
-          <li><a href="Home.html">Home</a></li>
-          <li><a href="gears.html">Gears</a></li>
-          <li><a href="instruments.html">Instruments</a></li>
-          <li><a href="brands.html">Brands</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="login.html">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-    
+    <h1><a href="Home.html" class="no-style">GuitarZone</a></h1>
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="gears.html">Gears</a></li>
+        <li><a href="instruments.html">Instruments</a></li>
+        <li><a href="brands.html">Brands</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <h2>Login</h2>
     <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" required /><br />
-      <label for="password">Password:</label>
-      <input type="password" id="password" required /><br />
+      <label for="username">Username</label>
+      <input type="text" id="username" required />
+
+      <label for="password">Password</label>
+      <input type="password" id="password" required />
+
       <button type="submit">Login</button>
     </form>
   </main>
@@ -39,13 +39,7 @@
   <footer>
     <p>&copy; 2025 DNR MUSIC</p>
   </footer>
-  <script>
-    document.getElementById('loginForm').addEventListener('submit', function (e) {
-      e.preventDefault();
-      const name = document.getElementById('username').value;
-      alert(`Welcome, ${name}!`);
-      // In future: store session, redirect
-    });
-  </script>
+
+  <script src="script.js"></script>
 </body>
 </html>

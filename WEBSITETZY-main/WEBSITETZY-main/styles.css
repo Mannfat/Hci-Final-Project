@@ -59,6 +59,24 @@ nav a {
   cursor: pointer;
 }
 
+.p1{
+  position: relative;
+  left: 46%;
+}
+
+.mainH{
+  position:relative;
+  left: 42%;
+  font-size: 35px;
+}
+
+.mainH2{
+  position:relative;
+  left: 46%;
+  font-size: 35px;
+}
+
+
 header .icon-cart span {
   display: flex;
   width: 20px;
@@ -272,4 +290,5 @@ body.showCart .container{
 .slider-nav a:hover {
   opacity: 1;
 }
+
 
