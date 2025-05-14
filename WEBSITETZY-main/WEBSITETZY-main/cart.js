@@ -92,3 +92,25 @@ document.addEventListener("DOMContentLoaded", function () {
   closeCartBtn.addEventListener("click", hideCart);
   openCartBtn.addEventListener("click", showCart);
 });
+
+const slider = document.getElementById("imageSlider");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    const slideWidth = slider.clientWidth;
+    slider.scrollTo({
+      left: slideWidth * index,
+      behavior: 'smooth'
+    });
+  }
+
+  function nextSlide() {
+    const totalSlides = slider.children.length;
+    currentIndex = (currentIndex + 1) % totalSlides;
+    showSlide(currentIndex);
+  }
+
+  // Auto-slide every 3 seconds
+  setInterval(nextSlide, 3000);
+
+  
